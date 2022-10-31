@@ -1,0 +1,18 @@
+PathFinder
+
+I made pathfinder as common way. Start point from (0,0) which means left top of the graph.
+In input string, 'R' makes go to x axis as +1, 'L' makes go to x axis -1, 'U' makes go to y axis -1, 'D' makes go to axis +1.
+Repeat it until end of the input string.
+
+I thought other 3 solution could make by first-order equation, recursion and non condition.
+But I need more time.
+----------------------09.28-----------------------
+I try non condition pathfinder. I thought the point is switch String to Vector. I get some hint from enum and struct.
+Each directions are declared as Vector. Read the string and convert to charactor array. Every element also convert to custom enum or structure.
+Here is the problem begin. The question is value can deal with as variable?
+Maybe this way is absolutly worng, I should find out another way.
+---------------------10.01------------------------
+Think as we are making something new kind of data structure, not banish conditions.
+We use 4 alphabet as express the direction. There are 26 alphabet in english.
+It means index of size 26 array could be expressed as conditions.
+After that, when input data over the range, I make some exception data structure as similar way.
